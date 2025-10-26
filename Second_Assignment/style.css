@@ -1,0 +1,59 @@
+.body{
+    margin: 0px;
+    background-position: center;
+    background: url("background.jpg");
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.icon{
+    border: none;
+}
+
+.icon:hover{
+    cursor: pointer;
+
+    animation-name: a1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 100%;
+}
+
+@keyframes a1{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.1);
+    }
+}
+
+.animation{
+    opacity: 10%;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+}  
+
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+
+.d1{
+    height: 460px;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: black;
+    border-width: 2px;
+    overflow: hidden;
+    overflow: scroll;
+}
+
+.d{
+    height: 65vh;
+}
